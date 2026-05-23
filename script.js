@@ -62,11 +62,12 @@ const BIN_HEIGHT_CM = 100; // Fake bin depth
 
 // 1. Drag & Drop events
 window.drag = (ev) => {
-    ev.dataTransfer.setData("type", ev.target.getAttribute('data-type'));
-    ev.dataTransfer.setData("volume", ev.target.getAttribute('data-volume'));
+    const el = ev.currentTarget || ev.target;
+    ev.dataTransfer.setData("type", el.getAttribute('data-type'));
+    ev.dataTransfer.setData("volume", el.getAttribute('data-volume'));
     
     // Slight ghost effect
-    setTimeout(() => { ev.target.style.opacity = '0.5'; }, 0);
+    setTimeout(() => { el.style.opacity = '0.5'; }, 0);
 };
 
 // End drag (restore opacity if it wasn't dropped)

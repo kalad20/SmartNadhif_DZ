@@ -467,10 +467,12 @@ body {
 
 .item-icon {
     font-size: 2rem;
+    pointer-events: none;
 }
 
 .item-name {
     font-weight: 600;
+    pointer-events: none;
 }
 
 /* Virtual Bin Area */
