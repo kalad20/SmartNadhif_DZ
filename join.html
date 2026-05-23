@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انضم إلينا - Smart Nadhif DZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .join-page-wrapper {
+            padding: 150px 20px 80px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #fff;
+            font-weight: 600;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 255, 149, 0.3);
+        }
+        /* Custom date picker color for dark mode */
+        ::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            cursor: pointer;
+        }
+        textarea.form-control {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .submit-btn {
+            width: 100%;
+            margin-top: 10px;
+            padding: 15px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Smart Nadhif DZ Logo" class="nav-logo-img">
+            <a href="index.html" style="text-decoration:none; color:inherit;">Smart<span>Nadhif_DZ</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">الرئيسية</a></li>
+            <li><a href="index.html#features">المميزات</a></li>
+            <li><a href="index.html#tech">التقنيات</a></li>
+            <li><a href="team.html">فريقنا</a></li>
+            <li><a href="index.html#partners">شركاؤنا</a></li>
+            <li><a href="index.html#contact">تواصل معنا</a></li>
+        </ul>
+        <a href="join.html" class="btn-primary" style="text-decoration: none;">اشترك الآن</a>
+    </nav>
+
+    <div class="join-page-wrapper">
+        <div class="form-container glass-card">
+            <h2 style="text-align: center; margin-bottom: 10px; color: var(--primary-color);">انضم إلى فريقنا</h2>
+            <p style="text-align: center; margin-bottom: 30px; color: var(--text-muted);">كن جزءاً من التغيير، وساهم في بناء مستقبل نظيف وذكي.</p>
+            
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('تم إرسال طلبك بنجاح! سنتواصل معك قريباً.'); window.location.href='index.html';">
+                <div class="form-group">
+                    <label for="fullname">الاسم واللقب</label>
+                    <input type="text" id="fullname" class="form-control" placeholder="أدخل اسمك الكامل" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dob">تاريخ الميلاد</label>
+                    <input type="date" id="dob" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="0550XXXXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني (الإيميل)</label>
+                    <input type="email" id="email" class="form-control" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialty">التخصص الدراسي أو المهني</label>
+                    <input type="text" id="specialty" class="form-control" placeholder="مثال: هندسة إعلام آلي، تسويق، إلخ" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills">المهارات</label>
+                    <textarea id="skills" class="form-control" placeholder="اذكر أهم مهاراتك التي يمكنك إفادة المشروع بها..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="goal">هدفك من الانضمام</label>
+                    <textarea id="goal" class="form-control" placeholder="لماذا تريد الانضمام إلى Smart Nadhif DZ؟ وما الذي تطمح لتحقيقه؟" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary submit-btn">إرسال الطلب</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

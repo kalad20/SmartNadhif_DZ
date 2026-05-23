@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فريقنا - Smart Nadhif DZ</title>
+    <meta name="description" content="تعرف على فريق Smart Nadhif DZ.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+            margin-bottom: 1rem;
+            box-shadow: 0 10px 20px rgba(0, 255, 149, 0.2);
+            transition: transform 0.3s;
+        }
+        .member-photo:hover {
+            transform: scale(1.1);
+        }
+        .rotated-90 {
+            transform: rotate(-90deg);
+        }
+        .rotated-90:hover {
+            transform: rotate(-90deg) scale(1.1);
+        }
+        .team-page-wrapper {
+            padding-top: 120px; /* offset for fixed navbar */
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Smart Nadhif DZ Logo" class="nav-logo-img">
+            <a href="index.html" style="text-decoration:none; color:inherit;">Smart<span>Nadhif_DZ</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">الرئيسية</a></li>
+            <li><a href="index.html#features">المميزات</a></li>
+            <li><a href="index.html#tech">التقنيات</a></li>
+            <li><a href="team.html" style="color: var(--primary-color);">فريقنا</a></li>
+            <li><a href="index.html#partners">شركاؤنا</a></li>
+            <li><a href="index.html#contact">تواصل معنا</a></li>
+        </ul>
+        <a href="join.html" class="btn-primary" style="text-decoration: none;">اشترك الآن</a>
+    </nav>
+
+    <div class="team-page-wrapper">
+        <section id="team" class="team-section" style="background:transparent;">
+            <div class="section-header">
+                <h2>فريقنا</h2>
+                <p>الشباب الطموح وراء مشروع Smart Nadhif DZ</p>
+            </div>
+            
+            <h3 style="text-align:center; margin-bottom: 2rem; color: var(--primary-color);">Leadership</h3>
+            <div class="team-grid">
+                <div class="member-card glass-card">
+                    <img src="images/image32.jpg" class="member-photo" alt="وصال عبدليوة">
+                    <h4>وصال عبدليوة (Abdelioua wissal)</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">قائدة المشروع (Leader)</p>
+                </div>
+                <div class="member-card glass-card">
+                    <img src="images/image33.jpg" class="member-photo" alt="دليلة سليماني">
+                    <h4>دليلة سليماني (Malek dalila slimani)</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">نائبة القائدة (Vice Leader)</p>
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin-bottom: 2rem; color: var(--primary-color);">Awareness & Health Team</h3>
+            <div class="team-grid">
+                <div class="member-card glass-card">
+                    <div class="member-photo" style="display:flex; align-items:center; justify-content:center; background:rgba(0,255,149,0.1); font-size:4rem; color:var(--primary-color);">👩‍💻</div>
+                    <h4>Nourhen Remadnia</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">عضو التوعية والصحة</p>
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin-bottom: 2rem; color: var(--primary-color);">Field & Engagement Team</h3>
+            <div class="team-grid">
+                <div class="member-card glass-card">
+                    <img src="images/image53.jpg" class="member-photo rotated-90" alt="Lina Tachtach" onerror="this.src='images/image31.jpg'">
+                    <h4>Lina Tachtach</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">العمل الميداني</p>
+                </div>
+                <div class="member-card glass-card">
+                    <img src="images/image52.jpg" class="member-photo rotated-90" alt="Sirin Hafiane" onerror="this.src='images/image31.jpg'">
+                    <h4>Sirin Hafiane</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">العمل الميداني</p>
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin-bottom: 2rem; color: var(--primary-color);">Events & Organization Team</h3>
+            <div class="team-grid">
+                <div class="member-card glass-card">
+                    <img src="images/image50.jpg" class="member-photo" alt="Takoua Khadem" onerror="this.src='images/image31.jpg'">
+                    <h4>Takoua Khadem</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">التنظيم والفعاليات</p>
+                </div>
+                <div class="member-card glass-card">
+                    <img src="images/image51.jpeg" class="member-photo" alt="Ranim Bouguerra" onerror="this.src='images/image31.jpg'">
+                    <h4>Ranim Bouguerra</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">التنظيم والفعاليات</p>
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin-bottom: 2rem; color: var(--primary-color);">Administration Team</h3>
+            <div class="team-grid">
+                <div class="member-card glass-card">
+                    <img src="images/image34.jpg" class="member-photo" alt="Amrani abde Raouf" onerror="this.src='images/image31.jpg'">
+                    <h4>Amrani abde Raouf</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">الإدارة والتنسيق</p>
+                </div>
+                <div class="member-card glass-card">
+                    <img src="images/image35.jpg" class="member-photo" alt="Mouna Zoubeida snani" onerror="this.src='images/image31.jpg'">
+                    <h4>Mouna Zoubeida snani</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">الإدارة والتنسيق</p>
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin-bottom: 2rem; color: var(--primary-color);">Media & Content Team</h3>
+            <div class="team-grid">
+                <div class="member-card glass-card"><img src="images/image36.jpg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Melaikia lamis</h4></div>
+                <div class="member-card glass-card"><img src="images/image38.png" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Aymen Guettari</h4></div>
+                <div class="member-card glass-card"><img src="images/image37.jpg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Atef Younes</h4></div>
+                <div class="member-card glass-card"><img src="images/image39.jpg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Allaadin kahia</h4></div>
+            </div>
+
+            <h3 style="text-align:center; margin-bottom: 2rem; color: var(--primary-color);">Tech Team</h3>
+            <div class="team-grid">
+                <div class="member-card glass-card"><img src="images/image41.png" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Lachi mohamed amine</h4></div>
+                <div class="member-card glass-card"><img src="images/image40.jpeg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Khaled teta</h4></div>
+                <div class="member-card glass-card"><img src="images/image39.jpg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Allaadin kahia</h4></div>
+                <div class="member-card glass-card"><img src="images/image45.jpg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Mounib Sansri</h4></div>
+                <div class="member-card glass-card"><img src="images/image44.jpeg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Zine eddine Hamaidi</h4></div>
+                <div class="member-card glass-card"><img src="images/image43.jpeg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Asma Harzallah</h4></div>
+                <div class="member-card glass-card"><img src="images/image42.png" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Boumarez Zakaria</h4></div>
+                <div class="member-card glass-card">
+                    <div class="member-photo" style="display:flex; align-items:center; justify-content:center; background:rgba(0,255,149,0.1); font-size:4rem; color:var(--primary-color);">👩‍💻</div>
+                    <h4>Meriem Gacem</h4>
+                </div>
+            </div>
+
+            <h3 style="text-align:center; margin-bottom: 2rem; color: var(--primary-color);">Partnerships & Communication Team</h3>
+            <div class="team-grid">
+                <div class="member-card glass-card"><img src="images/image48.jpg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Benchana mohamed Ilyes</h4></div>
+                <div class="member-card glass-card"><img src="images/image49.jpg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Kherici Raid</h4></div>
+                <div class="member-card glass-card"><img src="images/image42.png" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Abd El hamid</h4></div>
+                <div class="member-card glass-card"><img src="images/image31.jpg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Boumahrez zakaria</h4></div>
+            </div>
+
+            <h3 style="text-align:center; margin-bottom: 2rem; color: var(--primary-color);">Strategy & Research Team</h3>
+            <div class="team-grid" style="margin-bottom: 0;">
+                <div class="member-card glass-card"><img src="images/image46.jpg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Sarah sahnoun</h4></div>
+                <div class="member-card glass-card"><img src="images/image47.jpg" class="member-photo" onerror="this.src='images/image31.jpg'"><h4>Kahit Takoua</h4></div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-logo">Smart<span>Nadhif_DZ</span></div>
+            <p>نحو بيئة مستدامة بفضل التكنولوجيا.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartWaste Project. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
